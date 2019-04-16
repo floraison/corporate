@@ -1,7 +1,7 @@
 
 serve:
 	#FLOR_DEBUG=dbg,sto,colors CORPORATE_ENV=dev ruby -S rackup -p 7080 -o 0.0.0.0 -s thin
-	FLOR_DEBUG=dbg,colors CORPORATE_ENV=dev ruby -S rackup -p 7080 -o 0.0.0.0 -s thin
+	FLOR_DEBUG=dbg,colors CORPORATE_ENV=dev ruby -S rackup -p 7080 -o 0.0.0.0 -s puma
 s: serve
 
 kills:

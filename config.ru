@@ -6,6 +6,7 @@ require 'slim'
 $: << 'lib'
 require 'corporate'
 
+CORENV = ENV['CORPORATE_ENV'] || 'dev'
 
 configure do
 
@@ -26,18 +27,16 @@ configure do
   set :protection, :except => [ :json_csrf ]
 
   use Rack::Session::Pool,
-    #expire_after: 4 * 3600, # 4 hours
-    expire_after: 3 * 60, # 3 minutes
-    #expire_after: 10,
-    key: Corporate.session_key,
+    expire_after: 1 * 3600, # 1 hour
+    key: [ 'floraison_corporate', CORENV ].join('_'),
     same_site: :strict
 
   #set :sessions,
-  #  :key => Corporate.session_key
-  #  :expire_after => 4 * 3600, # 4 hours
-  #  :secret => 'thesunshinesandwomenhavesecrets'
-  #  #:domain => "localhost",
-  #  #:path => '/',
+  #  key: [ 'floraison_corporate', CORENV ].join('_'),
+  #  expire_after: 4 * 3600, # 4 hours
+  #  secret: 'thesunshinesandwomenhavesecrets'
+  #  #domain: "localhost",
+  #  #path: '/',
 end
 
 require 'corporate/web/helpers'

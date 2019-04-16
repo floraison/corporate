@@ -17,6 +17,7 @@ GEM
       raabro (~> 1.1)
     munemo (1.0.1)
     mustermann (1.0.3)
+    puma (3.12.1)
     raabro (1.1.6)
     rack (2.0.7)
     rack-protection (2.0.5)
@@ -42,6 +43,7 @@ PLATFORMS
 DEPENDENCIES
   flor
   jdbc-sqlite3
+  puma
   sinatra
   slim
   sqlite3
