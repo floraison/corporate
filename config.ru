@@ -10,48 +10,40 @@ CORENV = ENV['CORPORATE_ENV'] || 'dev'
 
 configure do
 
+  #set :port, 7080
+    # this is set via the command line `-p 7080`
+
   set :show_exceptions, true
 
-  #set :port, 8080
-    # seems Webrick doesn't care... Or Sinatra doesn't tell
-
   set :root, File.dirname(__FILE__)
-
   set :static, true
   set :public_folder, 'public'
-
   set :views, 'app/views'
-
-  set :slim, pretty: true, indent: ''
-
-  set :protection, :except => [ :json_csrf ]
+  set :protection, except: [ :json_csrf ]
 
   use Rack::Session::Pool,
     expire_after: 1 * 3600, # 1 hour
     key: [ 'floraison_corporate', CORENV ].join('_'),
     same_site: :strict
-
   #set :sessions,
   #  key: [ 'floraison_corporate', CORENV ].join('_'),
   #  expire_after: 4 * 3600, # 4 hours
   #  secret: 'thesunshinesandwomenhavesecrets'
   #  #domain: "localhost",
   #  #path: '/',
+
+  set :slim, pretty: true, indent: ''
 end
 
+require 'corporate/init/flor'
 require 'corporate/web/helpers'
 require 'corporate/web/endpoints'
 
-require 'flor'
 #require 'flack'
-#require 'corporate/flor_logger'
 #
 #map '/flack' do
 #
-#  use ManageFlowCheck
-#
 #  run Flack::App.new('flor/', start: false)
-#    # only start flor when auth credentials are available...
 #end
 
 run Sinatra::Application
