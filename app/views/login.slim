@@ -30,11 +30,18 @@ html
     - if page_js
       script src=(page_js)
 
-  body
+  body#login-page
 
-    p
+    header
+      .title corporate
+      .logo
+    nav
 
-      div= self.public_methods.sort.inspect
+    aside
+      p hello
+      p world
+
+    article
 
       form action="/login" method="POST"
         p
@@ -42,5 +49,11 @@ html
         p
           input name="pass" type="pass" placeholder="password"
         p
-          input type="submit" value="Login"
+          input type="submit" value="login"
+
+    footer
+      .left
+        .flor
+          | flor #{Flor::VERSION}
+      .right
 

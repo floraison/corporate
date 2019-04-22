@@ -42,6 +42,7 @@ end
 require 'corporate/web/helpers'
 require 'corporate/web/endpoints'
 
+require 'flor'
 #require 'flack'
 #require 'corporate/flor_logger'
 #
