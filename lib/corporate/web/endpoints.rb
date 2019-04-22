@@ -1,4 +1,9 @@
 
+get '/login' do
+
+  slim :login
+end
+
 get '/' do
 
   slim :index

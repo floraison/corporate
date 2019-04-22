@@ -32,5 +32,15 @@ html
 
   body
 
-    == yield
+    p
+
+      div= self.public_methods.sort.inspect
+
+      form action="/login" method="POST"
+        p
+          input name="user" type="user" placeholder="username"
+        p
+          input name="pass" type="pass" placeholder="password"
+        p
+          input type="submit" value="Login"
 
