@@ -19,6 +19,11 @@ header {
 }
 header .title {
   font-size: 210%;
+  display: inline-block;
+}
+header .logo {
+  font-size: 210%;
+  display: inline-block;
 }
 nav {
   position: absolute;
