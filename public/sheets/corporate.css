@@ -21,6 +21,17 @@ header .title {
   font-size: 210%;
 }
 nav {
+  position: absolute;
+  top: 2.0em;
+  right: 1em;
+  color: white;
+}
+nav a {
+  color: darkgrey;
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
 }
 
 article {
