@@ -15,15 +15,19 @@ body {
 form {
   position: absolute;
   right: 7%;
-  top: 40%;
+  bottom: 20%;
 
+  text-align: center;
+
+  /*
   display: inline-block;
-  background-color: lightgrey;
+  background-color: rgba(175, 175, 175, 0.7);
   padding: 0.84em 1.4em;
   border-radius: 0.35em;
+  */
 }
 input[type="submit"] {
   margin-top: 0.7em;
-  float: right;
+  width: 96%;
 }
 

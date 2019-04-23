@@ -1,5 +1,4 @@
 
-require 'pp'
 require 'sinatra'
 require 'slim'
 
@@ -34,10 +33,6 @@ configure do
 
   set :slim, pretty: true, indent: ''
 end
-
-require 'corporate/init/flor'
-require 'corporate/web/helpers'
-require 'corporate/web/endpoints'
 
 #require 'flack'
 #
