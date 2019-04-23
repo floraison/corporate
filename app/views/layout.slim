@@ -22,19 +22,25 @@ html
         | corporate
     nav
       ul
-        li
-          .users
-            a href="/users"
-              i.icofont-users-alt-1
-              | users
-        li
-          .user
-            a href="/users/#{user_name}"
-              i.icofont-user-alt-1
-              = user_name
-        /li
-        /  .logout
-        /    a href="/logout" logout
+        li.launch
+          a href="/flows" title="launch a new execution"
+            i.icofont-rocket
+            | launch
+        li.executions
+          a href="/executions" title="browsing current executions"
+            i.icofont-chart-line-alt
+            | executions
+        li.separator
+        li.users
+          a href="/users"
+            i.icofont-users-alt-1
+            | users
+        li.user
+          a href="/users/#{user_name}"
+            i.icofont-user-alt-1
+            = user_name
+        /li.logout
+        /  a href="/logout" logout
 
     == yield
 
