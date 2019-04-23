@@ -20,8 +20,18 @@ html
     nav
       ul
         li
-          .logout
-            a href="/logout" logout
+          .users
+            a href="/users"
+              i.icofont-users-alt-1
+              | users
+        li
+          .user
+            a href="/users/#{user_name}"
+              i.icofont-user-alt-1
+              = user_name
+        /li
+        /  .logout
+        /    a href="/logout" logout
 
     == yield
 

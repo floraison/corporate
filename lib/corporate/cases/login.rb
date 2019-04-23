@@ -5,7 +5,6 @@ module Corporate::Cases::Login
     def authentify(user, pass)
 
       users = load_users
-      return nil unless users
 
       u = users[user]
       return nil unless u
@@ -19,7 +18,8 @@ module Corporate::Cases::Login
 
     def load_users
 
-      YAML.load(File.read('etc/passwd.yaml')) rescue nil
+      (YAML.load(File.read('etc/passwd.yaml')) rescue {})
+        .each { |k, v| v[:name] = k }
     end
   end
 end
