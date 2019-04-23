@@ -1,3 +1,21 @@
+GIT
+  remote: https://github.com/floraison/flor
+  revision: b75f1ffb5724debbec81834a62e033cc3d31ee38
+  specs:
+    flor (0.17.1)
+      dense (~> 1.1, >= 1.1.6)
+      fugit (~> 1.1, >= 1.1.8)
+      munemo (~> 1.0, >= 1.0.1)
+      raabro (~> 1.1, >= 1.1.5)
+      sequel (~> 5)
+
+GIT
+  remote: https://github.com/floraison/florist
+  revision: ea7001da877d4959c8b0db9c8596fe76541ab5f1
+  specs:
+    florist (0.16.0)
+      flor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -6,13 +24,7 @@ GEM
       raabro (~> 1.1, >= 1.1.5)
     et-orbi (1.1.8)
       tzinfo
-    flor (0.17.0)
-      dense (~> 1.1, >= 1.1.6)
-      fugit (~> 1.1, >= 1.1.8)
-      munemo (~> 1.0, >= 1.0.1)
-      raabro (~> 1.1, >= 1.1.5)
-      sequel (~> 5)
-    fugit (1.1.10)
+    fugit (1.2.0)
       et-orbi (~> 1.1, >= 1.1.8)
       raabro (~> 1.1)
     munemo (1.0.1)
@@ -41,7 +53,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  flor
+  flor!
+  florist!
   jdbc-sqlite3
   puma
   sinatra

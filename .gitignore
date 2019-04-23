@@ -5,6 +5,8 @@
 .bxsinfo.yaml
 #.bxsenvs.yaml
 
+.todo.md
+
 *.swp
 
 .vimrc

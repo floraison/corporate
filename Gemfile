@@ -7,6 +7,8 @@ gem 'jdbc-sqlite3', :platforms => [ :jruby ]
 gem 'puma'
 
 gem 'sinatra'
-gem 'flor'
 gem 'slim'
+
+gem 'flor', git: 'https://github.com/floraison/flor'
+gem 'florist', git: 'https://github.com/floraison/florist'
 
