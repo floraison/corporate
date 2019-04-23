@@ -50,7 +50,16 @@ nav a:hover {
   color: white;
 }
 nav i {
+  /*
   margin-right: 0.28em;
+  */
+}
+nav li.user i {
+  /*
+  background-color: white;
+  color: blue;
+  border-radius: 100%;
+  */
 }
 
 article {
