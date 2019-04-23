@@ -1,12 +1,11 @@
 
 get '/login' do
 
-  slim :login
+  slim :login, layout: false
 end
 
 post '/login' do
 
-p params
   if u = Corporate::Cases::Login.authentify(params[:user], params[:pass])
     session[:user] = u
     redirect '/'

@@ -5,32 +5,29 @@ html
 
     title corporate
 
-    /! meta
-
     meta charset="utf-8"
 
-    /! sheets
+    - sheets.each do |s|
+      link href=(s) rel="stylesheet" media="all" type= 'text/css'
+    - scripts.each do |s|
+      script src=(s)
 
-    link(
-      href="/sheets/reset.css"
-      rel="stylesheet" media="all" type= 'text/css')
-    link(
-      href="/sheets/corporate.css"
-      rel="stylesheet" media="all" type= 'text/css')
-    - if page_css
-      link(
-        href=(page_css)
-        rel="stylesheet" media="all" type= 'text/css')
+  body id="#{page_name}-page"
 
-    /! scripts
-
-    //script src="/scripts/handlebars.min-v4.0.5.js"
-    //script src="/scripts/h-1.1.2-76aeddb.min.js?ev=#{Sg.enversion}"
-    script src="/scripts/corporate.js"
-    - if page_js
-      script src=(page_js)
-
-  body id="#{page}-login"
+    header
+      .title corporate
+      .logo
+    nav
 
     == yield
+
+    footer
+      .left
+        .flor
+          | flor #{Flor::VERSION}
+      .right
+        .copy
+          | &copy; 2019&nbsp;
+          a href="https://github.com/floraison"
+            | floraison
 

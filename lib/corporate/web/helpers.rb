@@ -1,21 +1,32 @@
 
 helpers do
 
-  alias original_slim slim
+  def page_name
 
-  def slim(template, opts={})
+    File.basename(request.path_info)
+  end
 
-    locals = (opts[:locals] ||= {})
+  def sheets
 
-    locals[:page] = pa = File.basename(request.path_info)
+    ss = [ '/sheets/reset.css', '/sheets/corporate.css' ]
 
-    { css: 'sheets', js: 'scripts' }
-      .each do |suffix, dir|
-        pas = "/#{dir}/#{pa}.#{suffix}"
-        locals[:"page_#{suffix}"] = File.exist?("public#{pas}") ? pas : nil
-      end
+    pa = "/sheets/#{page_name}.css"
+    ss << pa if File.exist?("public#{pa}")
 
-    original_slim(template, opts)
+    ss
+  end
+
+  def scripts
+
+      #//script src="/scripts/handlebars.min-v4.0.5.js"
+      #//script src="/scripts/h-1.1.2-76aeddb.min.js?ev=#{Sg.enversion}"
+      #script src="/scripts/corporate.js"
+    ss = [ '/scripts/corporate.js' ]
+
+    pa = "/scripts/#{page_name}.js"
+    ss << pa if File.exist?("public#{pa}")
+
+    ss
   end
 end
 
