@@ -3,7 +3,7 @@ html
 
   head
 
-    title Corporate
+    title corporate
 
     /! meta
 
@@ -37,23 +37,30 @@ html
       .logo
     nav
 
-    aside
-      p hello
-      p world
+    /aside
+    /  p hello
+    /  p world
 
     article
 
       form action="/login" method="POST"
         p
-          input name="user" type="user" placeholder="username"
+          input(
+            name="user" type="text" placeholder="username" autocomplete="off")
         p
-          input name="pass" type="pass" placeholder="password"
+          input(
+            name="pass" type="password" placeholder="password")
         p
-          input type="submit" value="login"
+          input(
+            type="submit" value="login")
 
     footer
       .left
         .flor
           | flor #{Flor::VERSION}
       .right
+        .copy
+          | &copy; 2019&nbsp;
+          a href="https://github.com/floraison"
+            | floraison
 
