@@ -86,6 +86,10 @@ footer {
 }
 footer .left {
 }
+footer .left > div {
+  display: inline-block;
+  margin-right: 0.7em;
+}
 footer .right {
   position: absolute;
   padding: 1em;
