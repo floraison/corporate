@@ -26,7 +26,11 @@ form {
   border-radius: 0.35em;
   */
 }
+input {
+  font-size: 120%;
+}
 input[type="submit"] {
+  font-size: 110%;
   margin-top: 0.7em;
   width: 96%;
 }
