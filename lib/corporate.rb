@@ -2,7 +2,10 @@
 require 'pp'
 require 'yaml'
 
-module Corporate; end
+module Corporate;
+
+  VERSION = '1.0.0'
+end
 
 require 'corporate/initializers'
 require 'corporate/cases'

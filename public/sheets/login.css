@@ -31,3 +31,8 @@ input[type="submit"] {
   width: 96%;
 }
 
+.left > div {
+  display: inline-block;
+  margin-right: 0.7em;
+}
+
