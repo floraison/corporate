@@ -83,6 +83,8 @@ footer {
   /*
   height: 2.5rem;
   */
+
+  font-size: 90%;
 }
 footer .left {
 }
@@ -97,9 +99,8 @@ footer .right {
   top: 0;
 }
 footer .copy {
-  font-size: 10pt;
 }
-footer .copy a {
+footer a {
   color: white;
   text-decoration: none;
 }

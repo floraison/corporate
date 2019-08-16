@@ -25,12 +25,15 @@ html
     nav
       ul
         li.launch
-          a href="/flows" title="launch a new execution"
-            | launch
+          a href="/definitions" title="browse process definitions"
+            | definitions
         li.executions
-          a href="/executions" title="browse current executions"
+          a href="/executions" title="browse current process executions"
             | executions
         li.separator
+        li.teams
+          a href="/teams"
+            | teams
         li.users
           a href="/users"
             | users
@@ -46,9 +49,14 @@ html
     footer
       .left
         .flor
-          | flor #{Flor::VERSION}
-        .corporation
-          | corporate #{Corporate::VERSION}
+          a href="https://github.com/floraison/flor" flor
+          | &nbsp;#{Flor::VERSION}
+        .florist
+          a href="https://github.com/floraison/florist" florist
+          | &nbsp;#{Florist::VERSION}
+        .corporate
+          a href="https://github.com/floraison/corporate" corporate
+          | &nbsp;#{Corporate::VERSION}
       .right
         .copy
           | &copy; 2019&nbsp;

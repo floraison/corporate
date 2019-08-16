@@ -44,9 +44,14 @@ html
     footer
       .left
         .flor
-          | flor #{Flor::VERSION}
-        .corporation
-          | corporate #{Corporate::VERSION}
+          a href="https://github.com/floraison/flor" flor
+          | &nbsp;#{Flor::VERSION}
+        .florist
+          a href="https://github.com/floraison/florist" florist
+          | &nbsp;#{Florist::VERSION}
+        .corporate
+          a href="https://github.com/floraison/corporate" corporate
+          | &nbsp;#{Corporate::VERSION}
       .right
         .copy
           | &copy; 2019&nbsp;
