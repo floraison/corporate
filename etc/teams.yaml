@@ -1,9 +1,12 @@
-accounting:
+acme.org.accounting:
 - alice
 - bob
-fandb:
+acme.org.sales:
 - charly
+acme.org.sales.east:
 - doug
-management:
+acme.org.sales.west:
 - edward
+acme.org.management:
 - flo
+- german

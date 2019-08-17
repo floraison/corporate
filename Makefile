@@ -10,5 +10,8 @@ kills:
 	ps aux | grep "rackup -p 7080" | awk '{ print $$2 }' | xargs kill -9
 ks: kills
 
-.PHONY: serve kills
+#migrate:
+#	$(RUBY) -Ilib -e "require 'flor/unit'; Flor::Unit.new('envs/$(FLOR_ENV)/etc/conf.json').storage.migrate($(TO), $(FROM))"
+
+.PHONY: serve kills migrate
 
