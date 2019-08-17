@@ -61,6 +61,10 @@ nav li.user i {
   border-radius: 100%;
   */
 }
+nav li.logout a {
+  margin-left: 0.49em;
+  font-size: 77%;
+}
 
 article {
   padding: 1em;

@@ -37,3 +37,8 @@ get '/test' do
   slim :test, layout: false
 end
 
+get '/users/:username' do
+
+  slim :user
+end
+
