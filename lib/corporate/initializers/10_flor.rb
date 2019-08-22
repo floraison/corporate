@@ -3,3 +3,5 @@
 
 require 'flor'
 
+FLOR = Flor::Unit.new('env/etc/conf.json')
+

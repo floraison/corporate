@@ -1,0 +1,25 @@
+
+env: production
+domain: 'org.example'
+
+#log_out: stdout
+log_out: tmp
+#log_colours: true
+#flor_debug: 'stdout,dbg'
+#flor_debug: [ stdout dbg ]
+
+sto_uri: (ife
+  == ruby_platform 'java'
+  'jdbc:sqlite://tmp/production.db'
+  'sqlite://tmp/production.db')
+
+sto_sync: true
+  # lets the storage sync access to DB, especially useful on JRuby + Sqlite
+
+sto_migration_table: flor_schema_info
+#sto_migration_column: version # default
+
+sto_connection_validation: false
+#sto_connection_validation: true # sets to -1 (validates all the time)
+#sto_connection_validation: 60 # validates after 60 seconds
+

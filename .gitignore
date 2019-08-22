@@ -16,3 +16,5 @@
 .vimmarks
 .vimspec
 
+tmp/*.db
+
