@@ -14,11 +14,9 @@ drop_tables:
 	FLOR_DEBUG=sto,stdout,colors FLOR_ENV_DIR=env $(RUBY) mak/drop_tables.rb
 delete_tables:
 	FLOR_DEBUG=sto,stdout,colors FLOR_ENV_DIR=env $(RUBY) mak/delete_tables.rb
-migrate:
+migrate_tables:
 	FLOR_DEBUG=sto,stdout,colors FLOR_ENV_DIR=env $(RUBY) mak/migrate.rb
-
-#migrate:
-#	$(RUBY) -Ilib -e "require 'flor/unit'; Flor::Unit.new('envs/$(FLOR_ENV)/etc/conf.json').storage.migrate($(TO), $(FROM))"
+migrate: migrate_tables
 
 .PHONY: \
   serve kills \

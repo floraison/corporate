@@ -23,3 +23,6 @@ sto_connection_validation: false
 #sto_connection_validation: true # sets to -1 (validates all the time)
 #sto_connection_validation: 60 # validates after 60 seconds
 
+wli_migration_table: florist_schema_info
+#wli_migration_column: version # default
+

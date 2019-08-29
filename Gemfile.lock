@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/floraison/florist
-  revision: cfb67f91d857a4cea673e584ce4af90e6da88ff9
+  revision: 83306fccd39df3d0e76f89f9a677a17c1d50c384
   specs:
     florist (0.18.0)
       flor (~> 0.18)
@@ -24,7 +24,7 @@ GEM
       raabro (~> 1.1, >= 1.1.5)
     et-orbi (1.2.2)
       tzinfo
-    fugit (1.3.2)
+    fugit (1.3.3)
       et-orbi (~> 1.1, >= 1.1.8)
       raabro (~> 1.1)
     munemo (1.0.1)

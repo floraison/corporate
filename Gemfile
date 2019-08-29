@@ -10,5 +10,7 @@ gem 'sinatra'
 gem 'slim'
 
 gem 'flor', git: 'https://github.com/floraison/flor'
+  #
 gem 'florist', git: 'https://github.com/floraison/florist'
+#gem 'florist', path: '../florist'
 
