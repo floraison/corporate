@@ -1,7 +1,7 @@
 
 # initializers/10_flor.rb
 
-require 'flor'
+require 'flor/unit'
 
-FLOR = Flor::Unit.new('env/etc/conf.json')
+ENGINE = Flor::Unit.new('env/etc/conf.json')
 

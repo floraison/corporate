@@ -3,3 +3,6 @@
 
 require 'florist'
 
+
+WORKLIST = Florist::Worklist.new(ENGINE)
+
