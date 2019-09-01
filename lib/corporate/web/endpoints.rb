@@ -42,3 +42,8 @@ get '/users/:username' do
   slim :user
 end
 
+get '/definitions' do
+
+  slim :definitions
+end
+
