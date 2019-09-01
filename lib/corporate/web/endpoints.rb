@@ -39,10 +39,14 @@ end
 
 get '/users/:username' do
 
-  present :user
+  @username = params[:username]
+
+  slim :user
 end
 
 get '/definitions' do
+
+  @definitions = ENGINE.loader.definitions
 
   slim :definitions
 end

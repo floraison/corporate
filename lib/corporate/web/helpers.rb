@@ -30,16 +30,5 @@ helpers do
 
     ss
   end
-
-  def present(page)
-
-    slim(page, {}, context(page))
-      # page, options, locals, &body
-  end
-
-  def context(page)
-
-    { alpha: 'hello' }
-  end
 end
 
