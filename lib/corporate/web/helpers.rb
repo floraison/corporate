@@ -23,15 +23,23 @@ helpers do
 
   def scripts
 
-      #//script src="/scripts/handlebars.min-v4.0.5.js"
-      #//script src="/scripts/h-1.1.2-76aeddb.min.js?ev=#{Sg.enversion}"
-      #script src="/scripts/corporate.js"
     ss = %w[ /scripts/corporate.js ]
 
     pa = "/scripts/#{page_name}.js"
     ss << pa if File.exist?("public#{pa}")
 
     ss
+  end
+
+  def present(page)
+
+    slim(page, {}, context(page))
+      # page, options, locals, &body
+  end
+
+  def context(page)
+
+    { alpha: 'hello' }
   end
 end
 

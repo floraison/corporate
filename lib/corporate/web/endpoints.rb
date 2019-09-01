@@ -39,7 +39,7 @@ end
 
 get '/users/:username' do
 
-  slim :user
+  present :user
 end
 
 get '/definitions' do
