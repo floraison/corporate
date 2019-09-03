@@ -1,7 +1,7 @@
 
 # corporate
 
-A web application showcasing [flor](https://github.com/floraison/flor).
+A web application showcasing [flor](https://github.com/floraison/flor) and [florist](https://github.com/floraison/florist). The strict minimum.
 
 
 ## license
