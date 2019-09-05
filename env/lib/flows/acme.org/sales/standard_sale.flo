@@ -1,0 +1,9 @@
+
+# standard sale
+
+sequence
+  assign_salesperson
+  contact_customer
+  prepare_order
+  deliver_order
+
