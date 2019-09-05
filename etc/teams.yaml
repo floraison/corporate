@@ -3,10 +3,16 @@ acme.org.accounting:
 - bob
 acme.org.sales:
 - charly
+- ludwig
 acme.org.sales.east:
 - doug
+- john
 acme.org.sales.west:
 - edward
+- karl
 acme.org.management:
 - flo
 - german
+acme.org.log: # for logistics
+- helmut
+- ida
