@@ -29,7 +29,7 @@ GEM
       raabro (~> 1.1)
     munemo (1.0.1)
     mustermann (1.0.3)
-    puma (3.12.2)
+    puma (3.12.3)
     raabro (1.1.6)
     rack (2.0.8)
     rack-protection (2.0.5)
