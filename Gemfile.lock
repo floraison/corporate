@@ -31,7 +31,7 @@ GEM
     mustermann (1.0.3)
     puma (3.12.4)
     raabro (1.1.6)
-    rack (2.0.8)
+    rack (2.2.3)
     rack-protection (2.0.5)
       rack
     sequel (5.23.0)
