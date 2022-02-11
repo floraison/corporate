@@ -30,7 +30,7 @@ GEM
     munemo (1.0.1)
     mustermann (1.0.3)
     nio4r (2.5.8)
-    puma (4.3.9)
+    puma (4.3.11)
       nio4r (~> 2.0)
     raabro (1.1.6)
     rack (2.2.3)
