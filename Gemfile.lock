@@ -19,21 +19,21 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.3.4)
     dense (1.1.6)
       raabro (~> 1.1, >= 1.1.5)
-    et-orbi (1.2.2)
+    et-orbi (1.2.11)
       tzinfo
-    fugit (1.3.3)
-      et-orbi (~> 1.1, >= 1.1.8)
-      raabro (~> 1.1)
+    fugit (1.11.1)
+      et-orbi (~> 1, >= 1.2.11)
+      raabro (~> 1.4)
     munemo (1.0.1)
     mustermann (2.0.2)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.0)
     puma (5.6.8)
       nio4r (~> 2.0)
-    raabro (1.1.6)
+    raabro (1.4.0)
     rack (2.2.8.1)
     rack-protection (2.2.3)
       rack
@@ -50,7 +50,7 @@ GEM
     sqlite3 (1.4.0)
     temple (0.8.1)
     tilt (2.0.11)
-    tzinfo (2.0.0)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
 
 PLATFORMS
